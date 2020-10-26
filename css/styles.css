@@ -1,0 +1,298 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* ################### END OF CSS RESET ################### */
+
+/* ################### START Sound Bar  ################### */
+
+/*FORMAT BREAKS DOWN @ 1604 x 874*/
+#soundBar
+{
+	position:absolute;
+	z-index = 4;
+	/*float:right;*/
+	top:40px;
+	padding-right: 20px;
+	height: 50px;
+	background-color: black;
+	opacity: 90%;
+	display: inline-block;
+}
+
+#soundBar.left
+{
+	left: 100px;
+	transition: all 2s;
+}
+#soundBar.right
+{
+	left: calc(100% - 638px);
+	transition: all 2s;
+}
+#soundBar #now_playing
+{
+	display: inline-block;
+	font-size: 20px;
+	padding-left: 10px;
+	color: white;
+}
+#soundBar ul
+{
+	display: none;
+}
+#soundBar:hover ul
+{
+	display: block;
+	margin-left: 50px;
+	width: calc(100% - 30px);
+	background-color: #111; 
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+#soundBar li
+{
+	font-size: 20;
+	padding-left: 60px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	color: white;
+}
+#soundBar li:hover
+{
+	background-color: darkgray;
+}
+
+a
+{
+	position:fixed;
+	z-index = 4;
+	bottom: 50px;
+	right: 50px;
+	font-size: 50px;
+	color: green;
+	background-color: black;
+	opacity: 75%;
+	padding: 2px;
+	border-radius: 50%;
+}
+
+a:hover
+{
+	opacity: 90%;
+}
+
+#playButton
+{
+	border:none;
+	width: 50px;
+	height: 50px;
+	background-color: gray;
+}
+#playButton:focus 
+{ 
+	outline: none;
+	color:white;
+}
+/* ################### END Sound Bar    ################### */
+body
+{
+	font-family: arial, san-serif;
+	background-color: #222;
+}
+#background
+{
+	position:fixed;
+	z-index = 0;
+	height:100%;
+	width: auto;
+	background-color: black;
+}
+#background.left
+{
+	left: 0;
+	transition: all 2s;
+}
+#background.right
+{
+	left: calc(100% - 1000px);
+	transition: all 2s;
+}
+
+.main
+{
+	position:fixed;
+	z-index = -1;
+	display: inline;
+	width:calc(100% - 1000px);
+	transition: left 2s;
+}
+
+.main h1
+{
+	position: absolute;
+	width: 100%;
+	z-index: -1;
+	display: inline-block;
+	font-size: 60px;
+	line-height:100px;
+	color: white;
+	margin: 40px -40px;
+}
+
+.banner
+{
+	z-index: -1;
+	height:100%;
+	width: auto;
+	position:fixed;
+}
+
+#home
+{
+	left: 0px;
+	transition: all 2s;
+}
+.main h1
+{
+	text-align: left;
+	margin-left: 75px;
+}
+
+
+#home.banner
+{
+	margin-left: calc(100% - 1050px);
+}
+
+.main.right
+{
+	left: 100%;
+	transition: all 2s;
+}
+
+
+.main button
+{
+	z-index: 5;
+	position: fixed;
+	height: 50px;
+	width: 200px;
+	padding: 10px,20px,0,20px;
+	border: solid white 1px;
+	color: white;
+	background-color: transparent;
+	font-size: 30px;
+	margin-left: 75px;
+}
+.main button:hover
+{
+	outline: none;
+	background-color:gray;
+}
+button.top
+{
+	margin-top: 15%;
+}
+button.bottom
+{
+	margin-top: 25%;
+}
+
+#home button.top
+{
+	margin-top: 25%;
+}
+#home button.bottom
+{
+	margin-top: 35%;
+}
+
+.nav.paused:hover
+{
+	background-color: transparent;
+}
+content
+{
+	position: absoulute;
+	z-index: 10;
+	display: none;
+	margin-left: 25px;
+	margin-top: 20%;
+	padding:50px;
+	font-size:20px;
+	background-color: #111;
+	opacity :90%;
+	width: 850px;
+
+}
+content h2
+{
+	opacity: 100%;
+	padding-top: 100px;
+	padding-bottom: 5%;
+	text-align: center;
+	font-size: 25px;
+	font-style: oblique;
+	text-decoration: underline;
+	color:white;
+}
+
+content li, content p 
+{
+	opacity: 100%;
+  	padding-left: 15px;
+  	line-height:50px;
+  	color:white;
+}
+
+content li
+{
+	display: list-item;
+  	list-style: decimal;
+  	margin-left: 35px; 
+}

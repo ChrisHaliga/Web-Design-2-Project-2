@@ -1,0 +1,308 @@
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+
+	<title>Art 325 | Project 2</title>
+	
+	<meta name="description" content="The concept behind working with JQuery plugins, is to design more and code less. In terms of design, you can begin to approach how a user will engage/interact with your design and content by accessing an array of jQuery plugin possibilities.">
+	
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/styles.css">
+	<script src="js/jquery.js"></script>
+	<script src="js/cycle2.js"></script>
+	<script src="js/scrollVert.js"></script>
+
+</head>
+
+
+<body onresize="setSize()">
+
+	<div id="background" class="right">
+		<div class="cycle-slideshow" data-cycle-fx="scrollVert" data-cycle-speed="2400">
+		    <img src="images/background1.jpg"width="1000"height="1000"/>
+		    <img src="images/background2.jpg"width="1000"height="1000"/>
+		    <img src="images/background3.jpg"width="1000"height="1000"/>
+		</div>
+	</div>
+
+	<main id="home" class="main">
+		<img class="banner" src="images/banner.jpg"/>
+		<h1>ASIAN<br>KUNG-FU<br>GENERATION</h1>
+		<button class="top nav" type="button" onclick="pageHandler(1)">Discography</button>
+		<button class="bottom nav" type="button" onclick="pageHandler(2)">History</button>
+	</main>
+
+	<main id="disc" class="main right">
+		<h1>Discography</h1>
+		<button class="top nav" type="button" onclick="pageHandler(-1)">Home</button>
+	</main>
+
+	<main id="info" class="main right">
+		<h1>History</h1>
+		<button class="top nav" type="button" onclick="pageHandler(-2)">Home</button>
+	</main>
+
+	<content id="content_disc">
+			<h2>Kimi Tsunagi Five M (2003)</h2>
+			<ol>
+				<li>"Flashback" (フラッシュバック Furasshubakku) 1:58</li>
+				<li>"Mirai no Kakera" (未来の破片 Piece of The Future) 4:45</li>
+				<li>"Denpatou" (電波塔 Radio Tower) 3:31</li>
+				<li>"Natsu no Hi, Zanzō" (夏の日、残像 After Image of Summer) 4:41</li>
+				<li>"Mugen Glider" (無限グライダー Eternal Glider) 5:07</li>
+				<li>"Sono Wake o" (その訳を The Reason Why) 4:36</li>
+				<li>"N.G.S" 2:54</li>
+				<li>"Jihei Tansaku" (自閉探索 (Search Within) Social Withdrawal) 3:28</li>
+				<li>"E" 4:12</li>
+				<li>"Kimi to Iu Hana" (君という花 A Flower Named You) 6:10</li>
+				<li>"No Name" (ノーネーム Nōnēmu) 5:00</li>
+			</ol>
+
+			<h2>Sol-fa (2004)</h2>
+			<ol>
+				<li>"Shindōkaku" (振動覚 Resonance) 2:27</li>
+				<li>"Rewrite" (リライト Riraito) 3:47</li>
+				<li>"Kimi no Machi Made" (君の街まで To Your Town) 3:36</li>
+				<li>"My World" (マイ・ワールド Mai Wārudo) 4:03</li>
+				<li>"Yoru no Mukō" (夜の向こう The Next Night) 3:12</li>
+				<li>"Last Scene" (ラストシーン Rasutoshīn) 4:01</li>
+				<li>"Siren" (サイレン Sairen) 5:28</li>
+				<li>"Re:Re:" 3:48</li>
+				<li>"Nijūyoji" (24時 Midnight) 3:31</li>
+				<li>"Mayonaka to Mahiru no Yume" (真夜中と真昼の夢 Midnight and Daydreams) 4:21</li>
+				<li>"Kaigan Dōri" (海岸通り Waterfront) 4:40</li>
+				<li>"Loop & Loop" (ループ&ループ Rūpu & Rūpu)</li>
+			</ol>
+
+			<h2>Fanclub (2006)</h2>
+			<ol>
+				<li>"Waltz in Code" (暗号のワルツ Angō no Warutsu) 4:25</li>
+				<li>"World Apart" (ワールドアパート Wārudo Apāto) 4:29</li>
+				<li>"Blackout" (ブラックアウト Burakkuauto) 5:19</li>
+				<li>"Primrose" (桜草 Sakurasō) 3:53</li>
+				<li>"Rabbit in the Back Alley" (路地裏のうさぎ Rojiura no Usagi) 2:47</li>
+				<li>"Blue Train" (ブルートレイン Burū Torein) 4:19</li>
+				<li>"Midwinter Dance" (真冬のダンス Mafuyu no Dansu) 3:25</li>
+				<li>"Butterfly" (バタフライ Batafurai) 4:44</li>
+				<li>"Senseless" (センスレス Sensuresu) 5:36</li>
+				<li>"Moonlight" (月光 Gekkō) 6:22</li>
+				<li>"Tightrope" (タイトロープ Taito Rōpu) 5:28</li>
+			</ol>
+
+			<h2>World World World (2008)</h2>
+			<ol>
+				<li>"World World World" (ワールド ワールド ワールド Wārudo Wārudo Wārudo) 1:18</li>
+				<li>"After Dark" (アフターダーク "Afutā Dāku") 3:12</li>
+				<li>"Tabidatsu Kimi e" (旅立つ君へ "To You, The Departing") 2:49</li>
+				<li>"Neoteny" (ネオテニー Neotenī) 4:43</li>
+				<li>"Travelogue" (トラベログ Toraberogu) 4:07</li>
+				<li>"No.9" (Number Nine) 3:33</li>
+				<li>"Night Diving" (ナイトダイビング Naitodaibingu) 3:02</li>
+				<li>"Laika" (ライカ Raika) 3:52</li>
+				<li>"Wakusei" (惑星 Planet) 4:01</li>
+				<li>"Korogaru Iwa, Kimi ni Asa ga Furu" (転がる岩、君に朝が降る) 4:38</li>
+				<li>"World World" (ワールド ワールド Wārudo Wārudo) 1:21</li>
+				<li>"Aru Machi no Gunjō" (或る街の群青 A Town in Blue) 4:16</li>
+				<li>"Atarashii Sekai" (新しい世界 New World) 3:18</li>
+			</ol>
+
+			<h2>Surf Bungaku Kamakura (2008)</h2>
+			<ol>
+				<li>"Fujisawa Loser" (藤沢ルーザー Fujisawa Rūzā) 2:45</li>
+				<li>"Kugenuma Surf" (鵠沼サーフ Kugenuma Sāfu) 2:28</li>
+				<li>"Enoshima Esker" (江ノ島エスカー Enoshima Esukā) 2:39</li>
+				<li>"Koshigoe Crybaby" (腰越クライベイビー Koshigoe Kuraibeibī) 3:54</li>
+				<li>"Shichirigahama Skywalk" (七里ヶ浜スカイウォーク Shichirigahama Sukaiwōku) 2:50</li>
+				<li>"Inamuragasaki Jane" (稲村ヶ崎ジェーン Inamuragasaki Jēn) 3:09</li>
+				<li>"Gokurakuji Heartbreak" (極楽寺ハートブレイク Gokurakuji Hātobureiku) 2:21</li>
+				<li>"Hase Suns" (長谷サンズ Hase Sanzu) 2:56</li>
+				<li>"Yuigahama Kite" (由比ヶ浜カイト Yuigahama Kaito) 3:54</li>
+				<li>"Kamakura Goodbye" (鎌倉グッドバイ Kamakura Guddobai) 4:31</li>
+			</ol>
+
+			<h2>Surf Bungaku Kamakura (2008)</h2>
+			<ol>
+				<li>1.	"Fujisawa Loser" (藤沢ルーザー Fujisawa Rūzā) 2:45</li>
+				<li>"Kugenuma Surf" (鵠沼サーフ Kugenuma Sāfu) 2:28</li>
+				<li>"Enoshima Esker" (江ノ島エスカー Enoshima Esukā) 2:39</li>
+				<li>"Koshigoe Crybaby" (腰越クライベイビー Koshigoe Kuraibeibī) 3:54</li>
+				<li>"Shichirigahama Skywalk" (七里ヶ浜スカイウォーク Shichirigahama Sukaiwōku) 2:50</li>
+				<li>"Inamuragasaki Jane" (稲村ヶ崎ジェーン Inamuragasaki Jēn) 3:09</li>
+				<li>"Gokurakuji Heartbreak" (極楽寺ハートブレイク Gokurakuji Hātobureiku) 2:21</li>
+				<li>"Hase Suns" (長谷サンズ Hase Sanzu) 2:56</li>
+				<li>"Yuigahama Kite" (由比ヶ浜カイト Yuigahama Kaito) 3:54</li>
+				<li>"Kamakura Goodbye" (鎌倉グッドバイ Kamakura Guddobai) 4:31</li>
+			</ol>
+
+			<h2>Magic Disk (2010)</h2>
+			<ol>
+				<li>"Shinseiki no Love Song" (新世紀のラブソング Love Song of New Century) 5:14</li>
+				<li>"Magic Disk" (マジックディスク Majikku Disuku) 4:37</li>
+				<li>"Sōshiyō" (双子葉 Dicotyledon) 3:59</li>
+				<li>"Sayonara Lost Generation" (さよならロストジェネレイション Goodbye Lost Generation) 5:19</li>
+				<li>"Maigoinu to Ame no Beat" (迷子犬と雨のビート A Lost Dog and Beats of the Rain) 4:57</li>
+				<li>"Aozora to Kuroi Neko" (青空と黒い猫 Blue Sky and a Black Cat) 4:39</li>
+				<li>"Kakū Seibutsu no Blues" (架空生物のブルース Blues of the Imaginary Creature) 4:19</li>
+				<li>"Last Dance wa Kanashimi o Nosete" (ラストダンスは悲しみを乗せて Last Dance with the Sadness) 3:42</li>
+				<li>"Microphone" (マイクロフォン Maikurofon) 3:21</li>
+				<li>"Rising Sun" (ライジングサン Raijingu San) 4:18</li>
+				<li>"Yes" (イエス Iesu) 3:17</li>
+				<li>"Daidai" (橙 Bitter Orange) 4:14</li>
+				<li>"Solanin" (ソラニン Soranin) 4:33</li>
+			</ol>
+
+			<h2>Landmark (2012)</h2>
+			<ol>
+				<li>"All Right Part 2" (featuring Hashimoto Eriko (from Chatmonchy)) 3:34</li>
+				<li>"N2" 3:06</li>
+				<li>"1.2.3.4.5.6. Baby" 3:24</li>
+				<li>"A & Z" (AとZ A to Z) 4:38</li>
+				<li>"Taiyō Kōro" (大洋航路 "Oceanic Route") 3:15</li>
+				<li>"Bicycle Race" (バイシクルレース Baishikuru Rēsu) 4:16</li>
+				<li>"Sore dewa, Mata Ashita" (それでは、また明日 "Well Then, See You Tomorrow") 3:42</li>
+				<li>"1980" 3:36</li>
+				<li>"Machine Guns to Keiyōshi" (マシンガンと形容詞 "Machine Guns and Adjectives") 3:54</li>
+				<li>"Railroad" (レールロード Reirurōdo) 3:08</li>
+				<li>"Kakato de Ai o Uchinarase" (踵で愛を打ち鳴らせ "Clicking My Heels To Love") 4:23</li>
+				<li>"Anemone no Saku Haru ni" (アネモネの咲く春に "In the Spring, When the Anemone Bloom") </li>
+			</ol>
+
+			<h2>Sol-fa 2016 (2016)</h2>
+			<ol>
+				<li>"Shindōkaku" (振動覚 Resonance) 2:27</li>
+				<li>"Rewrite" (リライト Riraito) 4:39</li>
+				<li>"Loop & Loop" (ループ&ループ Rūpu & Rūpu) 3:37</li>
+				<li>"Kimi no Machi Made" (君の街まで To Your Town) 3:40</li>
+				<li>"My World" (マイ・ワールド Mai Wārudo) 4:03</li>
+				<li>"Yoru no Mukō" (夜の向こう The Next Night) 3:13</li>
+				<li>"Last Scene" (ラストシーン Rasutoshīn) 3:55</li>
+				<li>"Siren" (サイレン Sairen) 5:25</li>
+				<li>"Re:Re:" 5:26</li>
+				<li>"Nijūyoji" (24時 Midnight) 3:34</li>
+				<li>"Mayonaka to Mahiru no Yume" (真夜中と真昼の夢 Midnight and Daydreams) 4:26</li>
+				<li>"Kaigan Dōri" (海岸通り Waterfront) 5:01</li>
+			</ol>
+
+			<h2>Hometown (2018)</h2>
+			<ol>
+				<li>"Clock Work" (クロックワーク Kurokku Wāku) 4:02</li>
+				<li>"Hometown" (ホームタウン Hōmutaun) 2:57</li>
+				<li>"Rainbow Flag" (レインボーフラッグ Reinbō Furaggu) 3:40</li>
+				<li>"Circus" (サーカス Sākasu) 4:37</li>
+				<li>"Kōya o Aruke" (荒野を歩け Walk in the Wild Land) 4:16</li>
+				<li>"UCLA" (with Ayaka Tatamino) 5:18</li>
+				<li>"Motor Pool" (モータープール Mōtā Pūru) 3:23</li>
+				<li>"Dancing Girl" (ダンシングガール Danshingu Gāru) 3:09</li>
+				<li>"Sayonara Soldier" (さようならソルジャー Goodbye Soldier) 4:23</li>
+				<li>"Boys & Girls" (ボーイズ&ガールズ Bōizu & Gāruzu) 4:40</li>
+			</ol>
+	</content>
+	
+	<content id="content_info">
+		<h2>Asian Kung-Fu Generation</h2>
+		<p>
+			Asian Kung-Fu Generation (アジアン・カンフー・ジェネレーション, Ajian Kanfū Jenerēshon, stylized as ASIAN KUNG-FU GENERATION) is a Japanese alternative rock band formed in Yokohama, Japan, in 1996. For its entire career, the band has consisted of vocalist Masafumi Gotoh, guitarist Kensuke Kita, bassist Takahiro Yamada, and drummer Kiyoshi Ijichi. Starting out as a college band, Asian Kung-Fu Generation released a series of independent EPs featuring lyrics mostly sung in English. In 2002, they released their major-label EP debut Hōkai Amplifier, from that point singing their lyrics in Japanese. The band's musical style is influenced by seminal Western alternative rock acts as well as their own local Japanese indie-rock and punk scene. Their songs incorporate various aspects of the genres, most typically expressing fast tempos and prominent power chord guitar riffs in addition to rhythmic groove and emotional lyrics. Despite the indie nature of their music, the band has enjoyed worldwide commercial success in addition to critical acclaim. Asian Kung-Fu Generation has been cited as one of the best, most balanced modern rock bands to emerge from Japan in the 2000s.
+		</p>
+
+		<h2>1996–2002: Formation and indie releases</h2>
+		<p>
+			Asian Kung-Fu Generation was first formed in 1996 when Masafumi Gotoh, Kensuke Kita, and Takahiro Yamada met while attending a music club at Kanto Gakuin University, a private university in Yokohama, Japan. After realizing that they all shared similar musical tastes, the three decided to start their own band. Masafumi Gotoh became the lead vocalist and played rhythm guitar, Kensuke Kita played lead guitar and sang backup and Takahiro Yamada played bass. Drummer Kiyoshi Ijichi joined them later on after parting with another college band he was in. The four then began providing performances at their university as well as throughout the local Yokohama area. After graduating from college, following years of playing in several small venues and having collaborated with fellow Japanese rock musician Caramelman, AKFG released their first indie EP in 2000. The six-track EP contained original lyrics written and sung almost entirely in English. The four spent the remainder of the year playing in clubs and hosting independent events.
+			<br>
+			The year after, the band made an attempt to attain airplay on indie radio stations for their first Japanese single, "Konayuki" (粉雪). The song was eventually picked up by a popular radio DJ and put into heavy rotation on the station FM Yokohama upon the demand of listeners. AKFG then released another indie EP, I'm Standing Here. This time, however, the band wrote songs in Japanese. At this time, the band had begun drawing an increasingly large number of audiences to their shows held in clubs in the districts of Shibuya, Shimokitazawa, Kichijōji, and Tokyo.
+		</p>
+
+		<h2>2002–2004: Hōkai Amplifier and Kimi Tsunagi Five M</h2>
+		<p>
+			On November 25, 2002, after contributing to the Under Flowers Records compilation, Whatch You Gonna Do?, Asian Kung–Fu Generation officially released their first major-label mini-album, Hōkai Amplifier (崩壊アンプリファー). The group enlisted internet radio host and graphic artist Yusuke Nakamura to design and compose their single and album covers. The critically acclaimed EP topped the High Line Records' weekly chart for two consecutive weeks and peaked at number thirty-five on the Oricon indies sales chart.
+ 			<br>
+			As a result of its success, Hōkai Amplifier was re-released on April 23, 2003, by the band's new record label, Ki/oon Records, a subsidiary of Sony Music Japan. A month later, AKFG held their first headline show at Shimokitazawa Club Shelter. That same summer, the band performed at the annual rock festivals of Fuji Rock Festival 03's "ROOKIE A GO GO" and Summer Sonic '03 in Tokyo and Osaka. On August 6, the band released their major-label debut single, "Mirai no Kakera" (未来の破片), with their second single, "Kimi to Iu Hana" (君という花), following shortly after. Days later, AKG held the first edition of what would become an annual festival, the Nano-Mugen Fes. The event took place on August 11 at the Shinjuku LOFT. The band followed it up by releasing their first full-length studio album, Kimi Tsunagi Five M (君繋ファイブエム) on November 19. The LP sold over 250,000 copies and landed in the number five spot on the Oricon charts in its first week. As their fame and following grew, fans began calling the band simply Ajikan (アジカン), an abbreviation of how the band's name is rendered in Japanese.
+		</p>
+
+		<h2>2004–2005: Sol-fa</h2>
+		<p>
+			As they entered 2004, AKFG received the award for Best New Artist while their video for "Kimi to Iu Hana" won the award for Best Music Video at the SPACE SHOWER Music Video Awards. From January 19 to February 25, AKG held their first headlining tour: Five Nano Seconds. The tour consisted of thirteen shows. On July 1, the band held their third ASIAN KUNG-FU GENERATION presents Nano-Mugen Festival at the Tokyo arena Nippon Budokan. Over the course of the following summer, the band played in more than ten summer rock festivals, including Meet The World Beat, Rock In Japan Fes 04, and Fuji Rock Festival 04.
+ 			<br>
+			Over the course of the year, the band released four more singles: "Siren" (サイレン), "Loop & Loop" (ループ＆ループ), "Rewrite" (リライト) and "Kimi no Machi Made" (君の街まで), before finally releasing their second full-length album, Sol-fa (ソルファ) on October 20. The album debuted at number-one on the Oricon charts where it stayed for two consecutive weeks and eventually went on to sell more than 600,000 copies. The album received critical praised for its honed sound and high production quality, which thoroughly nullified the language barrier that frequently impeded non–Japanese-speaking audiences. This notion became evident following the domestic release of Sol-fa, when AKFG fans from around the world organized themselves and petitioned for copies of the second album to be distributed outside Japan. The support for Ajikan eventually resulted in Tofu Records striking a contract to release Sol-fa in the United States on October 18, 2005. Additionally, the song "Rewrite" found recognition both domestically as well as on an international level when it was chosen as the fourth opening theme for the anime series Fullmetal Alchemist. Around the same time, their song "Haruka Kanata" enjoyed similar recognition after being used for the second opening of the anime series Naruto. Asian Kung–Fu Generation spent the next two months on a national tour consisting of twelve shows called "Tour SUI CUP 2004 -No! Member, November." The tour included a prestigious headliner at Nippon Budokan arena. The four then released a year-end video DVD, izō Sakuhinshū Vol. 1 on November 26. The DVD is compilation of the music videos for all singles from "Haruka Kanata" to "Kimi no Machi Made," including a never before seen clip of "Siren." The video contains audio commentary for each song, a making-of featurette, and live footage derived from their concerts. In 2016, the song "Re:Re:" was rerecorded and used as the opening for the anime Erased.
+		</p>
+
+		<h2>2005–2007: Fanclub and Feedback File</h2>
+		<p>
+			Due in part to their growing recognition, Asian Kung–Fu Generation would dedicate a significant amount of time the next couple of years going on extensive national tours. Between March 14 and June 26 of 2005, AKG went on an extensive sold-out Re:Re Tour, performing at forty-eight concerts in thirty-eight cities throughout Japan. At the same time, the band released their second DVD, Eizō Sakuhinshū Vol. 2: Live at Budokan +. The two-disc video was the band's very first live DVD, as the first disc contains live footage of the entirety of the final show of their "Tour Suihai 2004 - No!Member, November-," at Budokan, where they performed before an audience of over 10,000 people on December 5, 2004. Meanwhile, the second disc contains clips from their first concert at the Shimokitazawa Shelter Club on November 2, 2004. It also includes behind-the-scenes documentary directed by Toshiaki Toyoda and filmed at Kanto Gakuin University, as well as outtakes from the music video for "Kimi to Iu Hana." Upon its release, the video managed to top the Oricon DVD charts for an entire month. On July 9, AKFG held their fifth Nano-Mugen Festival at Yokohama Arena, where they performed with seven other Japanese and UK bands. To advertise the event, they released a preceding compilation album that retained one song from each band attending the festival. Over the next summer, AKG attended a host of festivals, including Summer Sonic 05, Rising Sun Rock Fes. 2005, and Rock in Japan Fes. 05. They also appeared as guests on GOGOICHI –SPACE SHOWER CHART SHOW– on November 27 on SPACE SHOWER TV. The band closed the year by releasing the single, "Blue Train" (ブルートレイン), followed up by a brief tour entitled, "Tour SUI CUP 2005 - Winter Dragon" in December.
+			<br>
+			The band began 2006 with the release of their upcoming album's second single, "World Apart." The single was unique in that it featured a song in which Kensuke Kita stood as lead singer. It was AKFG's first song to achieve number-one single status, also it was the year that the band was finally able to acquire their very own studio. They then took part in live performances in LIVE SUPERNOVA DX on February 16, 2006. On March 15, AKG released their third full-length album, Fanclub (ファンクラブ). The album peaked at number three and stayed in the Oricon top five for nearly two months. The following month, the band went on a national tour entitled, Count 4 My 8 Beat. Tickets for all thirty-eight shows quickly sold out. AKFG's sixth annual Nano-Mugen Fes. was held at Yokohama Arena. For two days, Asian Kung–Fu Generation and eleven other bands, including six Japanese bands, three American bands and two English bands, performed. Like the previous year, a compilation album was released in July to advertise the Nano-Mugen Festival. After three years of attending the Fuji Rock Fes, AKFG had the opportunity to perform on its coveted primary Green Stage for the first time at Fuji Rock Festival 06.
+			<br>
+			To commemorate their ten-year anniversary, Asian Kung–Fu Generation released their first compilation album, Feedback File on October 25. Rather than featuring hit singles, the nostalgic album was primarily compiled of B-sides, live performances, and old demos from their early indie days. Even though it retained little new material, the compilation was met by commercial success and managed to debut at number two on the Oricon charts. AKFG then went on a two-month arena tour entitled, Tour Sui Cup 2006-2007: The Start of a New Season. Well over 100,000 fans attended this tour, which traveled through eight cities and featured guest performances by bands from Japan and the United States. In the midst of the tour, AKFG was commissioned by the director of the then-upcoming anime film, Tekkon Kinkreet, to compose a theme song for the movie. The band created a song called, "Aru Machi no Gunjō" (或る街の群青) and released it as a year-end single prior to the film's debut. As a sign of their increasing cultural prominence, the band came to be parodied in a volume of the popular Hellsing manga by members of the Vatican named, "The Vactikung."
+		</p>
+		<h2>2007–2008: Withdrawal and World World World</h2>
+		<p>
+			On March 21, the band released another live DVD, Eizō Sakuhinshū Vol. 3 that contained footage of their previous tour. Although they took part in various domestic summer festivals, AKFG gradually became more and more withdrawn over the course of 2007 before halting appearances almost entirely, including the lack of their annual Nano-Mugen festival. Nevertheless, the band released the single "After Dark", which debuted in the top ten on the Oricon charts and was used as the seventh opening for the anime series Bleach.
+			<br>
+			In March of the following year, the band released their next album, World World World, accompanied by the single "Korogaru Iwa, Kimi ni Asa ga Furu" (転がる岩、君に朝が降る). Despite the lack of media appearances and the significant timespan between releases, the album debuted at #1 on the Oricon album chart.
+			<br>
+			Just a few months after the album's release, Asian Kung–Fu Generation released their second major-label EP, Mada Minu Ashita ni, on June 11, 2008. The mini-album features songs conceived around the time of the recording of their preceding full-length album. Although the EP spawned no singles, the song "Mustang" managed to peak at number fifteen on the Japan Hot 100. The song was the band's very first entry on the newly established chart.
+		</p>
+		<h2>2008–2009: Surf Bungaku Kamakura</h2>
+		<p>
+			The band appeared as a supporting act for a show held at Yokohama Bay Hall by American alternative rock band Third Eye Blind on July 18. Incidentally, Third Eye Blind later appeared for the fourth and final lineup of AKFG's seventh annual Nano-Mugen Festival held at the Yokohama Arena through July 20-21st. The group was but one of a total of sixteen musical acts, originating from Japan, America, and the UK, who performed at the festival alongside Asian Kung–Fu Generation, who later released their third Nano-Mugen disc, Nano-Mugen Compilation 2008. Peaking at number eighteen on the Oricon charts and retaining one song from each of the sixteen groups, the compilation expressed the largest track number within the Nano-Mugen series yet. Additionally, the song "Natsusemi" (夏蝉, Summer Cicada), composed by AKFG just for the compilation, managed to peak at number thirty-six on the Japan Hot 100 despite not being released as a single.
+			<br>
+			In September, Asian Kung–Fu Generation had the opportunity to play side by side with Weezer, a California-based alternative rock band that had played a major influence on their music. The WEEZER FESTIVAL was Weezer's first tour to Japan in three years and in promotion of their The Red Album, they performed on September 13 at Intex Osaka and on the 15 at The National Yoyogi First Gymnasium in Tokyo. Asian Kung–Fu Generation, along with fellow Japanese rock band Going Under Ground, performed on both the Osaka and Tokyo stage.
+			<br>
+			They later released their twelfth single Fujisawa Loser in October followed by their fifth studio album Surf Bungaku Kamakura.
+		</p>
+		<h2>2009–2012: Magic Disk and Best Hit AKG</h2>
+		<p>
+			After a busy 2008, the band spent time touring and writing new material. In March 2009, they released their fifth DVD, Eizō Sakuhinshū Vol. 5, featuring a collection of live videos from various live events in 2008. In July 2009, Asian Kung–Fu Generation held their annual Nano-Mugen festival. This was accompanied by Nano-Mugen Compilation 2009, which featured a new track, "Yoru no Call" (夜のコール, Call of the Night), and tracks from each of the other 16 bands that partook in the festival. At the conclusion of the festival, Gotoh announced the group had started writing and producing a new album. Immediately following Nano-Mugen, the group kicked off their 2009 festival summer season with performances at Korea's "Jisan Valley Rock Festival", "Rock in Japan Festival 2009", and "Sweet Love Shower Festival 2009". In October, their sixth DVD, Eizō Sakuhinshū Vol. 6, was released and was also the band's first release on Blu-ray. It featured a concert from their March 2009 hall tour "World World World", which featured a more experimental set design and set list, as well as the use of instruments such as tenori-on and a strings section. The second half of the set included the whole of their 2008 album Surf Bungaku Kamakura from start to finish.
+			<br>
+			The band released their 13th single, "Shinseiki no Love Song" (新世紀のラブソング, Love Song of the New Century), on December 2, 2009, which featured a DVD of songs from the group's appearance at Jisan Valley Rock Festival earlier in the year. At the same time, the band announced that at the end of March 2010, they would be releasing a new single titled "Solanin", which was to be used as the theme song to the film of the same name. The single featured a remix of "Mustang" from Mada Minu Ashita ni, which was a studio mix of the version played on Eizō Sakuhinshū Vol. 6. The track was also used as the ending theme to the movie.
+			<br>
+			In January 2010, Gotoh posted an entry into his diary stating that they had recorded a Japanese version of The Rentals song "A Rose Is a Rose". In February 2010, the band spent 2 weeks in New York, in which they recorded 2 songs. In the same month it was announced that the band would provide the opening theme for the anime The Tatami Galaxy, which features character design from Yusuke Nakamura, the same artist who illustrates the Ajikan CD covers. The song was titled "Maigoinu to Ame no Beat" (迷子犬と雨のビート, A Stray Puppy and the Beat of the Rain). A single release is to follow.
+			<br>
+			In April 2010, Gotoh posted an entry into his diary stating that the band's 6th full-length album would be released in June 2010 with the title "Magic Disk" (マジックディスク, Majikkudisuku).
+			<br>
+			In March 2011, the 2011 Tōhoku earthquake and tsunami caused the band to cancel the rest of their "2010-2011 Vibration of Music Tour", due to some touring equipment being damaged. Within the next week after the disaster, Masafumi Gotoh published lyrics on his diary, inspired by the disaster, called "Suna no Ue" (砂の上, On the Sand). The song was later recorded, and was played on live radio airplay around Japan. In the next month, Gotoh later announced in his diary that they were in the studio, recording new songs. Two new AKG songs were released on the Nano-Mugen Compilation 2011, titled "Hikari" and "All right Part 2".
+			<br>
+			In July 2011, Asian Kung-Fu Generation played live at "Jisan Valley Rock Festival" an annual 3 day music festival held every July at Jisan Valley Ski Resort, in Icheon, South Korea.
+			<br>
+			In November 2011, the band announced that they would release a new single and a best of album. The single, titled "Marching Band", was released on November 30 and the best of album, Best Hit AKG, was released in January 2012 Gotoh announced via Twitter that the best of album does not represent the end of the band, and that they still plan on releasing an original album in summer, 2012.
+		</p>
+		<h2>2012–2015: Landmark and Feedback File 2</h2>
+		<p>
+			On April 11, 2012, AKFG released the single, titled "Kakato de Ai o Uchinarase" (踵で愛を打ち鳴らせ, Ring Out Love with Your Heel). It was composed by the band's lead guitarist, Kita. In June 2012, a promotional video was released for a song titled "Yoru o Koete" (夜を越えて, Beyond the Night), in promotion of the Nano-Mugen Festival 2012. It is featured on the Nano-Mugen Compilation 2012, released on June 27, 2012.
+			<br>
+			A few days before the 2012 Nano-Mugen Festival, it was announced that a new single, titled "Sore dewa, Mata Ashita" (それでは、また明日, Well Then, See You Again Tomorrow), will be released on July 25, 2012. It is also the theme song for Naruto the Movie: Road to Ninja, which was released on July 28. After the 2012 Nano-Mugen Festival, it was also announced on the band's website that a new album would be released on September 12, 2012, titled Landmark, and that a tour would follow in the following month of October in support of the album.
+			<br>
+			A new single, titled "Ima o Ikite" (今を生きて, Live Now), was released on February 20, 2013, and it was featured in a movie, titled Yokomichi Yonosuke (横道世之介).
+			<br>
+			In 2013, Asian Kung-Fu Generation undertook their first European tour, with 3 dates in 3 countries consisting of London (31 May), Paris (2 June) and Cologne (3 June). In September 2013, the band celebrated their 10th anniversary of signing onto a major label by holding a special concert over two days at Yokohama Stadium. This concert included guest performers from the HIATUS, The Rentals, Straightener, and Fujifabric.
+			<br>
+			In December of that year, to celebrate their 10th anniversary they embarked on their first Asia Circuit tour, performing in Korea, Singapore, and Taiwan together with Straightener (also celebrating their 10th anniversary) and a local band of each respective country.
+		</p>
+		<h2>2015–2017: Wonder Future and Sol-fa 2016</h2>
+		<p>
+			In May 2015, the band released their eighth album, Wonder Future, produced by Masafumi Gotoh. The only single from the album, "Easter" was released in March 2015. To promotion album, they released two music video, "Opera Glasses" and "Planet of the Apes". They held tour named "Asian Kung-fu Generation Tour 2015 (Wonder Future)" from July until October 2015 in Japan and November in Europe. In March 2016, they released live DVD and Blu-ray, Eizo Sakuhin Shu Vol.12 that contains their tour concert in Tokyo International Forum.
+			<br>
+			In 2016, the band released three singles that used as theme song for movie and anime. "Right Now" for theme song 2016 film, Pink and Gray, while the re-recording of "Re:Re:" and "Blood Circulator" used as opening theme song for Erased and Naruto Shippuden respectively. To celebrate their 20th anniversary live, they re-recorded Sol-fa and held tour with setlist contain all songs from Sol-fa. In 2017, they released box-set AKG Box –20th Anniversary Edition– that contains their album from Hōkai Amplifier to Wonder Future and released live DVD and Blu-ray, Eizo Sakuhin Shu Vol.13. They also released single "Kōya o Aruke" and was used as the theme song for the 2017 anime film, Night Is Short, Walk On Girl. In July 2017, they held tour in USA and South America. In December 2017, they tour with Feeder and perform new song called "Sleep", written by Feeder.
+		</p>
+		<h2>2018–present: Best Hit AKG 2 and Hometown</h2>
+		<p>
+			In March 2018, they released Best Hit AKG 2 alongside two bootleg album, HONE and IMO. They held tour called "BONES & YAMS" (based two bootleg album artwork), with Nick Moon as opening act. In September 2018, they released single "Boys & Girls". In December 2018, they released their tenth studio album Hometown with limited edition contains Can't Sleep EP. They decided to split album because they didn't want people to pay double the amount for separate CDs and listening album for one hour more is too long. Both album has collaboration with other musicians such as Rivers Cuomo, Butch Walker, Grant Nicholas, Ayaka Tatamino, Atsushi Horie, and The Charm Park. To promote the new album, the band have announced a nationwide tour in Japan set for March to July. They also released music videos for "Hometown", "Haikyo no Kioku", "Sleep", "UCLA", "Motor Pool", and "Rainbow Flag", with three latter were result from Creator Auditions hosted by koe Inc. In May 2019, they released double A-side single, "Dororo/Kaihōku". "Dororo" was used as the second opening for 2019 remake anime, Dororo. After the tour, they have announced two concerts in London and Paris alongside two additional concerts in London as opening act for Feeder in November 2019.
+		</p>
+	</content>
+
+	<a id="spotify" href="https://open.spotify.com/artist/0MK8l3nURwwQIjafvXoJJt" target="_blank"><i class="fab fa-spotify"></i></a>
+
+	<div id="soundBar" class="right">
+		<button id="playButton" onclick="soundHandler()" type="button"><i id="playButtonIcon" class="fas fa-play"></i></button>
+		<div id = "now_playing">ASIAN KUNG-FU GENERATION - Re:Re</div>
+		<audio display="none" id="music"><source src="music/ReRe.mp3" type="audio/mpeg"></audio>
+		<ul id="playlist">
+			<li onclick="musicChoice(0)">Blood Circulator</li>
+			<li onclick="musicChoice(1)">Siren</li>
+			<li onclick="musicChoice(2)">Haruka Kanata</li>
+			<li onclick="musicChoice(3)">Rewrite</li>
+		</ul>
+	</div>
+
+	<script src="js/scripts.js"></script>
+</body>
+</html>
